@@ -3,19 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9409C3D925C17EB600750805 /* OptionalDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9409C3D825C17EB600750805 /* OptionalDemo.swift */; };
+		9409C3DE25C2B1CD00750805 /* QuickCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9409C3DD25C2B1CD00750805 /* QuickCheck.swift */; };
+		940E1AC325DFC384006581ED /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E1AC225DFC384006581ED /* Enum.swift */; };
 		94184C6825B9318000016CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94184C6725B9318000016CD9 /* AppDelegate.swift */; };
 		94184C6A25B9318000016CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94184C6925B9318000016CD9 /* SceneDelegate.swift */; };
 		94184C6C25B9318000016CD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94184C6B25B9318000016CD9 /* ViewController.swift */; };
 		94184C6F25B9318000016CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94184C6D25B9318000016CD9 /* Main.storyboard */; };
 		94184C7125B9318300016CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94184C7025B9318300016CD9 /* Assets.xcassets */; };
 		94184C7425B9318300016CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94184C7225B9318300016CD9 /* LaunchScreen.storyboard */; };
+		94184C7F25B9321000016CD9 /* Battleship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94184C7E25B9321000016CD9 /* Battleship.swift */; };
+		9471C7CE25BFF04600482305 /* BasicFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471C7CD25BFF04600482305 /* BasicFunction.swift */; };
+		948D492825BA791500AB2998 /* EncapsulateCoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948D492725BA791500AB2998 /* EncapsulateCoreImage.swift */; };
+		94982A0D25E8DB0E00412F0B /* PureSwiftDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94982A0C25E8DB0E00412F0B /* PureSwiftDataStruct.swift */; };
+		94C9C02C26034EF200BC1C8E /* AsyncTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9C02B26034EF200BC1C8E /* AsyncTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		434387F0F1BCF36AABBB0914 /* Pods-函数式Swift学习.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-函数式Swift学习.release.xcconfig"; path = "Target Support Files/Pods-函数式Swift学习/Pods-函数式Swift学习.release.xcconfig"; sourceTree = "<group>"; };
+		452636142B1D23BD460AEF27 /* Pods____Swift__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____Swift__.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9409C3D825C17EB600750805 /* OptionalDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalDemo.swift; sourceTree = "<group>"; };
+		9409C3DD25C2B1CD00750805 /* QuickCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCheck.swift; sourceTree = "<group>"; };
+		940E1AC225DFC384006581ED /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		94184C6425B9318000016CD9 /* 函数式Swift学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "函数式Swift学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94184C6725B9318000016CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94184C6925B9318000016CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,13 @@
 		94184C7025B9318300016CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94184C7325B9318300016CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94184C7525B9318300016CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94184C7E25B9321000016CD9 /* Battleship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battleship.swift; sourceTree = "<group>"; };
+		94184C8225B9331200016CD9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9471C7CD25BFF04600482305 /* BasicFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFunction.swift; sourceTree = "<group>"; };
+		948D492725BA791500AB2998 /* EncapsulateCoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncapsulateCoreImage.swift; sourceTree = "<group>"; };
+		94982A0C25E8DB0E00412F0B /* PureSwiftDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureSwiftDataStruct.swift; sourceTree = "<group>"; };
+		94C9C02B26034EF200BC1C8E /* AsyncTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTestViewController.swift; sourceTree = "<group>"; };
+		FD4141224F216D8C78FDCC0D /* Pods-函数式Swift学习.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-函数式Swift学习.debug.xcconfig"; path = "Target Support Files/Pods-函数式Swift学习/Pods-函数式Swift学习.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,11 +57,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07CE17F8ABF9243A98B11B57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				452636142B1D23BD460AEF27 /* Pods____Swift__.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		627549DDF6AC96CA0BE6F0D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD4141224F216D8C78FDCC0D /* Pods-函数式Swift学习.debug.xcconfig */,
+				434387F0F1BCF36AABBB0914 /* Pods-函数式Swift学习.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9409C3D725C17E8A00750805 /* 4、可选值 */ = {
+			isa = PBXGroup;
+			children = (
+				9409C3D825C17EB600750805 /* OptionalDemo.swift */,
+			);
+			path = "4、可选值";
+			sourceTree = "<group>";
+		};
+		9409C3DC25C2B18900750805 /* 5、案例研究：QuickCheck */ = {
+			isa = PBXGroup;
+			children = (
+				9409C3DD25C2B1CD00750805 /* QuickCheck.swift */,
+			);
+			path = "5、案例研究：QuickCheck";
+			sourceTree = "<group>";
+		};
+		940E1AC125DFC355006581ED /* 6、枚举 */ = {
+			isa = PBXGroup;
+			children = (
+				940E1AC225DFC384006581ED /* Enum.swift */,
+			);
+			path = "6、枚举";
+			sourceTree = "<group>";
+		};
 		94184C5B25B9318000016CD9 = {
 			isa = PBXGroup;
 			children = (
 				94184C6625B9318000016CD9 /* 函数式Swift学习 */,
 				94184C6525B9318000016CD9 /* Products */,
+				627549DDF6AC96CA0BE6F0D3 /* Pods */,
+				07CE17F8ABF9243A98B11B57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +119,64 @@
 		94184C6625B9318000016CD9 /* 函数式Swift学习 */ = {
 			isa = PBXGroup;
 			children = (
+				94184C7D25B931E000016CD9 /* 1、函数式思想 */,
+				948D492625BA78CF00AB2998 /* 2、封装CoreImage */,
+				948D492D25BAD9C800AB2998 /* 3、Map、Filter 和 Reduce */,
+				9409C3D725C17E8A00750805 /* 4、可选值 */,
+				9409C3DC25C2B18900750805 /* 5、案例研究：QuickCheck */,
+				940E1AC125DFC355006581ED /* 6、枚举 */,
+				94982A0B25E8DACC00412F0B /* 7、纯函数式数据结构 */,
+				94184C7C25B931A700016CD9 /* Origin */,
+				94184C8225B9331200016CD9 /* README.md */,
+			);
+			path = "函数式Swift学习";
+			sourceTree = "<group>";
+		};
+		94184C7C25B931A700016CD9 /* Origin */ = {
+			isa = PBXGroup;
+			children = (
 				94184C6725B9318000016CD9 /* AppDelegate.swift */,
 				94184C6925B9318000016CD9 /* SceneDelegate.swift */,
 				94184C6B25B9318000016CD9 /* ViewController.swift */,
+				94C9C02B26034EF200BC1C8E /* AsyncTestViewController.swift */,
 				94184C6D25B9318000016CD9 /* Main.storyboard */,
 				94184C7025B9318300016CD9 /* Assets.xcassets */,
 				94184C7225B9318300016CD9 /* LaunchScreen.storyboard */,
 				94184C7525B9318300016CD9 /* Info.plist */,
 			);
-			path = "函数式Swift学习";
+			path = Origin;
+			sourceTree = "<group>";
+		};
+		94184C7D25B931E000016CD9 /* 1、函数式思想 */ = {
+			isa = PBXGroup;
+			children = (
+				94184C7E25B9321000016CD9 /* Battleship.swift */,
+			);
+			path = "1、函数式思想";
+			sourceTree = "<group>";
+		};
+		948D492625BA78CF00AB2998 /* 2、封装CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				948D492725BA791500AB2998 /* EncapsulateCoreImage.swift */,
+			);
+			path = "2、封装CoreImage";
+			sourceTree = "<group>";
+		};
+		948D492D25BAD9C800AB2998 /* 3、Map、Filter 和 Reduce */ = {
+			isa = PBXGroup;
+			children = (
+				9471C7CD25BFF04600482305 /* BasicFunction.swift */,
+			);
+			path = "3、Map、Filter 和 Reduce";
+			sourceTree = "<group>";
+		};
+		94982A0B25E8DACC00412F0B /* 7、纯函数式数据结构 */ = {
+			isa = PBXGroup;
+			children = (
+				94982A0C25E8DB0E00412F0B /* PureSwiftDataStruct.swift */,
+			);
+			path = "7、纯函数式数据结构";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94184C7825B9318300016CD9 /* Build configuration list for PBXNativeTarget "函数式Swift学习" */;
 			buildPhases = (
+				A2E631BCFBBC767FCBF8D4A0 /* [CP] Check Pods Manifest.lock */,
 				94184C6025B9318000016CD9 /* Sources */,
 				94184C6125B9318000016CD9 /* Frameworks */,
 				94184C6225B9318000016CD9 /* Resources */,
+				B64A7A4F368C4AB05E7827C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +246,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A2E631BCFBBC767FCBF8D4A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-函数式Swift学习-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B64A7A4F368C4AB05E7827C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-函数式Swift学习/Pods-函数式Swift学习-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-函数式Swift学习/Pods-函数式Swift学习-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-函数式Swift学习/Pods-函数式Swift学习-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94184C6025B9318000016CD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				94184C6C25B9318000016CD9 /* ViewController.swift in Sources */,
+				9409C3D925C17EB600750805 /* OptionalDemo.swift in Sources */,
+				94C9C02C26034EF200BC1C8E /* AsyncTestViewController.swift in Sources */,
 				94184C6825B9318000016CD9 /* AppDelegate.swift in Sources */,
+				948D492825BA791500AB2998 /* EncapsulateCoreImage.swift in Sources */,
 				94184C6A25B9318000016CD9 /* SceneDelegate.swift in Sources */,
+				940E1AC325DFC384006581ED /* Enum.swift in Sources */,
+				94982A0D25E8DB0E00412F0B /* PureSwiftDataStruct.swift in Sources */,
+				9471C7CE25BFF04600482305 /* BasicFunction.swift in Sources */,
+				9409C3DE25C2B1CD00750805 /* QuickCheck.swift in Sources */,
+				94184C7F25B9321000016CD9 /* Battleship.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +447,12 @@
 		};
 		94184C7925B9318300016CD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD4141224F216D8C78FDCC0D /* Pods-函数式Swift学习.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "函数式Swift学习/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/函数式Swift学习/Origin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +466,12 @@
 		};
 		94184C7A25B9318300016CD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434387F0F1BCF36AABBB0914 /* Pods-函数式Swift学习.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "函数式Swift学习/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/函数式Swift学习/Origin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

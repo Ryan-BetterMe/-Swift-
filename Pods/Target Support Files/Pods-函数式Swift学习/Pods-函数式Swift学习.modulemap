@@ -1,0 +1,6 @@
+framework module Pods____Swift__ {
+  umbrella header "Pods-函数式Swift学习-umbrella.h"
+
+  export *
+  module * { export * }
+}
