@@ -17,7 +17,6 @@ func >>>(filter1: @escaping Filter, filter2: @escaping Filter) -> Filter {
     }
 }
 
-
 class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
@@ -28,11 +27,12 @@ class ViewController: UIViewController {
     
     @IBAction func action(_ sender: UIButton) {
         
-        let vc = AsyncTestViewController.init()
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
         
-//        setupFilter(imageView: imageView)
+        let trie1 = Trie.init(isElement: true, children: ["c": Trie.init(isElement: true, children: [:]), "d": Trie.init(isElement: true, children: [:])])
+        let trie2 = Trie.init(isElement: false, children: ["a": trie1, "b": Trie.init(isElement: true, children: [:])])
+        print(trie2.elements)
+        
+        print(trie2.loopup(key: ["a", "d"]))
     }
     
     func setupFilter(imageView: UIImageView) {

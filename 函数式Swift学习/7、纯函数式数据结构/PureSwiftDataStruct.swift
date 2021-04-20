@@ -195,14 +195,110 @@ extension Trie {
     }
     
     // 将字典树flatten 为包含全部元素的数组
-    // 如[[ca], [cat]...]]
+    //        *
+    //       / \
+    //      a   b
+    //     / \
+    //    c   d
     var elements: [[Element]] {
         var result: [[Element]] = isElement ? [[]] : []
         
+        // 第一层 a: trie1  b: trie2
+        // [] + trie1.elements.map + [[b]]
+        // 第二层：c: trie3  d: trie3
+        //
         for (key, value) in children {
             result += value.elements.map { [key] + $0 }
+            
+            NSLog("result: \(result)")
         }
         
         return result
     }
 }
+
+/// 定义能够遍历的数组来进行递归
+extension Array {
+    var slice: ArraySlice<Element> {
+        return ArraySlice(self)
+    }
+}
+
+extension ArraySlice {
+    // 为了性能问题：Array中DropFirst复杂度是O(n), 而ArraySlice中DropFirst的复杂度为O(1)
+    var decomposed: (Element, ArraySlice<Element>)? {
+        return isEmpty ? nil : (self[startIndex], self.dropFirst())
+    }
+}
+
+func sum(_ integers: ArraySlice<Int>) -> Int {
+    guard let (head, tail) = integers.decomposed else { return 0 }
+    return head + sum(tail)
+}
+
+// 查询函数
+// 1、键组是一个空数组 返回当前节点的isElement 布尔值
+// 2、键组不为空，但是不存在对应的子树
+// 3、键组不为空 —— 在这种情况下，我们会查询键组中第一个键对应的子树
+extension Trie {
+    func loopup(key: ArraySlice<Element>) -> Bool {
+        guard let (head, tail) = key.decomposed else { return isElement }
+        
+        guard let subTrie = children[head] else { return false }
+        return subTrie.loopup(key: tail)
+    }
+    
+    // 小修改：给定前缀键组，使其返回一个含有所有匹配元素的子树
+    func loopup(key: ArraySlice<Element>) -> Trie<Element>? {
+        guard let (head, tail) = key.decomposed else { return self }
+        guard let remainder = children[head] else { return nil }
+        return remainder.loopup(key: tail)
+    }
+    
+    func complete(key: ArraySlice<Element>) -> [[Element]] {
+        return loopup(key: key)?.elements ?? []
+    }
+}
+
+/// 创建只含有一个元素的字典树
+extension Trie {
+    // ["a"]
+    init(_ key: ArraySlice<Element>) {
+        if let (head, tail) = key.decomposed {
+            let children = [head: Trie(tail)]
+            self = Trie(isElement: false, children: children)
+        } else {
+            self = Trie(isElement: true, children: [:])
+        }
+    }
+}
+
+/// 插入函数来填充字典树
+extension Trie {
+    func inserting(_ key: ArraySlice<Element>) -> Trie<Element> {
+        guard let (head, tail) = key.decomposed else {
+            return Trie(isElement: true, children: children)
+        }
+        
+        var newChildren = children
+        
+        if let nextTrie = children[head] {
+            newChildren[head] = nextTrie.inserting(tail)
+        } else {
+            newChildren[head] = Trie(tail)
+        }
+        return Trie(isElement: isElement, children: newChildren)
+    }
+}
+
+/// 字符串字典树 == 待续
+extension Trie {
+    static func build(words: [String]) -> Trie<Character> {
+        let emptyTrie = Trie<Character>()
+        return words.reduce(emptyTrie) { (trie, word) in
+            trie.inserting(Array(word).slice)
+        }
+    }
+}
+
+
