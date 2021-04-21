@@ -32,7 +32,11 @@ class ViewController: UIViewController {
         let trie2 = Trie.init(isElement: false, children: ["a": trie1, "b": Trie.init(isElement: true, children: [:])])
         print(trie2.elements)
         
-        print(trie2.loopup(key: ["a", "d"]))
+        let contents = ["cat", "car", "cart", "dog"]
+        let trieOfWords = Trie<Character>.build(words: contents)
+        let a = "car".complete(trieOfWords)
+        
+        print(a)
     }
     
     func setupFilter(imageView: UIImageView) {

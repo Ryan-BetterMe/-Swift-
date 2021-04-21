@@ -209,8 +209,6 @@ extension Trie {
         //
         for (key, value) in children {
             result += value.elements.map { [key] + $0 }
-            
-            NSLog("result: \(result)")
         }
         
         return result
@@ -255,7 +253,9 @@ extension Trie {
         return remainder.loopup(key: tail)
     }
     
+    // “在给定一组搜索的历史记录和一个现在待搜索字符串的前缀时，计算出一个与之相匹配的补全列表。”
     func complete(key: ArraySlice<Element>) -> [[Element]] {
+        // 如此时传入["c", "a", "r"]
         return loopup(key: key)?.elements ?? []
     }
 }
@@ -300,5 +300,19 @@ extension Trie {
         }
     }
 }
+
+extension String {
+    // 自动补全: 将结果返回为字符串
+    func complete(_ knownWords: Trie<Character>) -> [String] {
+        let chars = Array(self).slice
+        let completed = knownWords.complete(key: chars)
+        
+        return completed.map { chars in
+            self + String(chars)
+        }
+    }
+}
+
+
 
 
