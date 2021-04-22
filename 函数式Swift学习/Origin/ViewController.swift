@@ -23,20 +23,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        imageView.image = draw01()
     }
     
     @IBAction func action(_ sender: UIButton) {
         
         
-        let trie1 = Trie.init(isElement: true, children: ["c": Trie.init(isElement: true, children: [:]), "d": Trie.init(isElement: true, children: [:])])
-        let trie2 = Trie.init(isElement: false, children: ["a": trie1, "b": Trie.init(isElement: true, children: [:])])
-        print(trie2.elements)
-        
-        let contents = ["cat", "car", "cart", "dog"]
-        let trieOfWords = Trie<Character>.build(words: contents)
-        let a = "car".complete(trieOfWords)
-        
-        print(a)
     }
     
     func setupFilter(imageView: UIImageView) {
@@ -72,6 +65,18 @@ class ViewController: UIViewController {
         } else {
             let _ = 1 / a
         }
+    }
+    
+    func trie() {
+        let trie1 = Trie.init(isElement: true, children: ["c": Trie.init(isElement: true, children: [:]), "d": Trie.init(isElement: true, children: [:])])
+        let trie2 = Trie.init(isElement: false, children: ["a": trie1, "b": Trie.init(isElement: true, children: [:])])
+        print(trie2.elements)
+        
+        let contents = ["cat", "car", "cart", "dog"]
+        let trieOfWords = Trie<Character>.build(words: contents)
+        let a = "car".complete(trieOfWords)
+        
+        print(a)
     }
 }
 

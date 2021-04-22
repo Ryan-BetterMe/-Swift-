@@ -21,6 +21,7 @@
 		948D492825BA791500AB2998 /* EncapsulateCoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948D492725BA791500AB2998 /* EncapsulateCoreImage.swift */; };
 		94982A0D25E8DB0E00412F0B /* PureSwiftDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94982A0C25E8DB0E00412F0B /* PureSwiftDataStruct.swift */; };
 		94C9C02C26034EF200BC1C8E /* AsyncTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9C02B26034EF200BC1C8E /* AsyncTestViewController.swift */; };
+		94E4793326301881005793B8 /* DrawGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4793226301881005793B8 /* DrawGraphics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		948D492725BA791500AB2998 /* EncapsulateCoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncapsulateCoreImage.swift; sourceTree = "<group>"; };
 		94982A0C25E8DB0E00412F0B /* PureSwiftDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureSwiftDataStruct.swift; sourceTree = "<group>"; };
 		94C9C02B26034EF200BC1C8E /* AsyncTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTestViewController.swift; sourceTree = "<group>"; };
+		94E4793226301881005793B8 /* DrawGraphics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawGraphics.swift; sourceTree = "<group>"; };
 		FD4141224F216D8C78FDCC0D /* Pods-函数式Swift学习.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-函数式Swift学习.debug.xcconfig"; path = "Target Support Files/Pods-函数式Swift学习/Pods-函数式Swift学习.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,8 @@
 				9409C3DC25C2B18900750805 /* 5、案例研究：QuickCheck */,
 				940E1AC125DFC355006581ED /* 6、枚举 */,
 				94982A0B25E8DACC00412F0B /* 7、纯函数式数据结构 */,
+				94E479312630182F005793B8 /* 8、案例研究：图表 */,
+				94E479542631609C005793B8 /* 9、迭代器和序列 */,
 				94184C7C25B931A700016CD9 /* Origin */,
 				94184C8225B9331200016CD9 /* README.md */,
 			);
@@ -177,6 +181,21 @@
 				94982A0C25E8DB0E00412F0B /* PureSwiftDataStruct.swift */,
 			);
 			path = "7、纯函数式数据结构";
+			sourceTree = "<group>";
+		};
+		94E479312630182F005793B8 /* 8、案例研究：图表 */ = {
+			isa = PBXGroup;
+			children = (
+				94E4793226301881005793B8 /* DrawGraphics.swift */,
+			);
+			path = "8、案例研究：图表";
+			sourceTree = "<group>";
+		};
+		94E479542631609C005793B8 /* 9、迭代器和序列 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "9、迭代器和序列";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E4793326301881005793B8 /* DrawGraphics.swift in Sources */,
 				94184C6C25B9318000016CD9 /* ViewController.swift in Sources */,
 				9409C3D925C17EB600750805 /* OptionalDemo.swift in Sources */,
 				94C9C02C26034EF200BC1C8E /* AsyncTestViewController.swift in Sources */,
