@@ -218,7 +218,5 @@ func ---(l: Diagram, r: Diagram) -> Diagram {
     return .below(l, r)
 }
 
-
 /// 问题来了，通过这些小巧的代码，就可以创造出强大的图表绘制库！！！
 /// 可以说，这两个库都是定义了一种领域特定语言（domain - specific - language) DSL
-

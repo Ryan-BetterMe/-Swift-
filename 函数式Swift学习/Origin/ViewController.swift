@@ -24,12 +24,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        imageView.image = draw01()
+//        imageView.image = draw01()
     }
     
     @IBAction func action(_ sender: UIButton) {
-        
-        
+        iteratorTest()
     }
     
     func setupFilter(imageView: UIImageView) {
@@ -78,12 +77,22 @@ class ViewController: UIViewController {
         
         print(a)
     }
+    
+    func iteratorTest() {
+        //        let letters = ["a", "b", "c"]
+        //        var iterator = ReverseIndexIterator(array: letters)
+        //        while let i = iterator.next() {
+        //            print("\(i)  \(letters[i])")
+        //        }
+        
+//                var iterator = PowerIterator.init()
+//                let a = iterator.find(where: { $0.intValue > 1000 })
+//                print(a)
+        
+        let a = [1, 2, 3].smallerQ()
+        print(a)
+    }
 }
-
-
-
-
-
 
 
 
